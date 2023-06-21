@@ -1,0 +1,20 @@
+{
+    "name": "celo-assemblyscript",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "asbuild:untouched": "asc assembly/index.ts -b build/untouched.wasm --use abort=",
+      "asbuild:optimized": "asc assembly/index.ts -b build/optimized.wasm --use abort=",
+      "test": "npx as-pect"
+    },
+    "devDependencies": {
+      "@as-pect/assembly": "^4.0.0",
+      "@as-pect/cli": "^4.0.0",
+      "@as-pect/core": "^4.0.0",
+      "@types/chai": "^4.2.21",
+      "@types/mocha": "^9.0.0",
+      "as-bignum": "^0.2.3",
+      "as-pect": "^4.2.0",
+      "assemblyscript": "^0.19.16"
+    }
+  }
